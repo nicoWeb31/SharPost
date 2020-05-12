@@ -9,27 +9,30 @@
     <title>Document</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-  <div class="collapse navbar-collapse" id="navbarColor02">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="<?= URLROOT ?>"><?= SITNAME ?> <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?= URLROOT ?>/pages/about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?= URLROOT ?>/users/register">Register</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?= URLROOT ?>/users/login">Login</a>
-      </li>
 
-    </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="<?= URLROOT ?>/pages/index"><?= SITNAME ?> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?= URLROOT ?>/pages/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?= URLROOT ?>/users/register">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?= URLROOT ?>/users/login">Login</a>
+          </li>
+    
+        </ul>
+    
+      </div>
+    </nav>
 
-  </div>
-</nav>
 
 
 
