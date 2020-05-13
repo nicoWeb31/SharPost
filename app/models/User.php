@@ -40,4 +40,22 @@ class User {
         }
 
     }
+
+    //login 
+    public function login($email,$password){
+        $this->db->query('SELECT * FROM users WHERE email=:email');
+        $this->db->bind(':email', $email);
+
+        $row = $this->db->single();
+        $hashedPassword = $row->password;
+        if(password_verify($password,$hashedPassword)){
+            return $row;
+        }else{
+            return false;
+        }
+
+    }
+
+
+
 }
