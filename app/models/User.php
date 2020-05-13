@@ -1,5 +1,10 @@
 <?php 
 
+
+/**
+ * model user recup db
+ */
+
 class User {
     private  $db;
 

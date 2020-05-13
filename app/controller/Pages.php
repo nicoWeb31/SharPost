@@ -12,6 +12,11 @@ class Pages extends Controller
 
     public function index(){
 
+        if(isLogin()){
+            redirect('posts');
+        }
+
+
         $data = ['title' =>'welcome',
         'description' =>'Simùple social network build on the TraversMvc php Framwork'
         ];

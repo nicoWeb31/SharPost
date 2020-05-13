@@ -191,7 +191,7 @@ class Users extends Controller{
         $_SESSION['user_id'] = $logUser->id;
         $_SESSION['user_email'] = $logUser->email;
         $_SESSION['user_name'] = $logUser->name;
-        redirect('pages/index');
+        redirect('posts');
 
     }
 
@@ -205,11 +205,4 @@ class Users extends Controller{
     
         }
 
-        public function isLogin(){
-            if(isset($_SESSION['user_id'])){
-                return true;
-            }else{
-                return false;
-            }
-        }
 }
